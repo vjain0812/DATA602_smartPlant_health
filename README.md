@@ -30,15 +30,6 @@ Using the [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool
 
 ---
 
-## 🛠️ Tech Stack
-- **Programming Language:** Python  
-- **Deep Learning Frameworks:** TensorFlow / PyTorch  
-- **Model Architectures:** CNNs, ResNet, EfficientNet, DenseNet  
-- **Tools & Libraries:** OpenCV, scikit-learn, Matplotlib, NumPy, Pandas  
-- **Deployment (future scope):** Streamlit / Flask / FastAPI, possibly mobile integration  
-
----
-
 ## 🚀 Project Workflow
 1. **Data Preprocessing**  
    - Train-validation-test split  
@@ -67,10 +58,11 @@ Using the [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool
 
 ---
 
-## 👥 Team & Contributions
-- **Data Selection & Preprocessing** → Understanding dataset and preparing it for training.  
-- **Model Training & Evaluation** → Designing CNN models and applying transfer learning.  
-- **Deployment & Presentation** → Building user-friendly interface and project documentation.  
+## 👥 Team
+- **Vansh Jain** → UID: 122082892
+- **Raj Ambavane** → UID: 121998644
+- **Dhruv Dube** → UID: 122129887
+- **Shantanu Ramavat** → UID: 121997708.  
 
 ---
 
@@ -88,4 +80,3 @@ Using the [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool
 
 ---
 
-💡 *This project aims to bridge the gap between AI research and real-world agriculture, empowering farmers with a practical, accessible, and automated disease detection tool.*
