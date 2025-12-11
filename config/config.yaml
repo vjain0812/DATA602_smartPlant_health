@@ -1,0 +1,44 @@
+﻿# Project Configuration
+
+project:
+  name: "Smart Plant Health Monitor"
+  version: "1.0.0"
+  
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  train_path: "data/train"
+  val_path: "data/val"
+  test_path: "data/test"
+  num_classes: 38
+  img_size: 224
+  
+models:
+  yolo:
+    weights_path: "models/yolo/best.pt"
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+  
+  resnet:
+    weights_path: "models/resnet/best.pth"
+    architecture: "resnet50"
+    num_classes: 38
+  
+  lstm:
+    weights_path: "models/lstm/best.h5"
+    sequence_length: 30
+    features: 10
+    
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  patience: 10
+  
+api:
+  host: "0.0.0.0"
+  port: 8000
+  
+ui:
+  host: "0.0.0.0"
+  port: 8501

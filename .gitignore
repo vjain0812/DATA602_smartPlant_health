@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Data
+data/raw/*
+data/processed/*
+data/train/*
+data/val/*
+data/test/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models
+models/yolo/*.pt
+models/resnet/*.pth
+models/lstm/*.h5
+*.weights
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
