@@ -1,6 +1,3 @@
-Here is a **clean, student-level `README.md`** written in **Markdown code**, ready to paste directly into your project.
-
-```md
 # Smart Plant Health Monitor
 
 A machine learning based system for plant disease detection and watering prediction using image data and sensor readings.
@@ -10,16 +7,17 @@ A machine learning based system for plant disease detection and watering predict
 ## Project Objective
 
 The objective of this project is to monitor plant health by:
-- Identifying plant diseases from leaf images
-- Detecting infected regions on leaves
-- Predicting whether a plant needs watering using sensor data
+
+* Identifying plant diseases from leaf images
+* Detecting infected regions on leaves
+* Predicting whether a plant needs watering using sensor data
 
 ---
 
 ## Models Used
 
 | Task | Model |
-|----|----|
+| --- | --- |
 | Disease classification | ResNet50 |
 | Disease detection | YOLOv8 |
 | Watering prediction | LSTM |
@@ -29,119 +27,107 @@ The objective of this project is to monitor plant health by:
 ## Dataset
 
 ### Plant Disease Dataset
-- Source: Kaggle – New Plant Diseases Dataset
-- 38 disease and healthy classes
-- RGB leaf images
+
+* Source: Kaggle – New Plant Diseases Dataset
+* 38 disease and healthy classes
+* RGB leaf images
 
 ### Sensor Dataset
-- Temperature
-- Humidity
-- Soil moisture
-- Light intensity
-- NPK values
-- Health score  
-(Sensor data is synthetically generated)
+
+* Includes Temperature, Humidity, Soil moisture, Light intensity, NPK values, and Health score
+* Sensor data is synthetically generated for time-series analysis
 
 ---
 
 ## Project Structure
 
-```
-
+```text
 SPH/
-├── dataset_subset/        # Image dataset for training
-├── dataset_yolo_mini/     # YOLO formatted dataset
-├── data/timeseries/       # Sensor data
-├── models/                # Saved models
-├── train_resnet.py        # ResNet training
-├── train_yolo.py          # YOLO training
-├── train_lstm.py          # LSTM training
-├── pipeline.py            # Combined prediction pipeline
-├── main.py                # FastAPI backend
-└── streamlit_app.py       # Web interface
+├── dataset_subset/      # Image dataset for training
+├── dataset_yolo_mini/   # YOLO formatted dataset
+├── data/timeseries/     # Sensor data
+├── models/              # Saved models
+├── train_resnet.py      # ResNet training
+├── train_yolo.py        # YOLO training
+├── train_lstm.py        # LSTM training
+├── pipeline.py          # Combined prediction pipeline
+├── main.py              # FastAPI backend
+└── streamlit_app.py     # Web interface
 
-````
+```
 
 ---
 
 ## Installation
 
 ### Requirements
-- Python 3.8+
-- CUDA GPU (optional but recommended)
+
+* Python 3.8+
+* CUDA GPU (optional but recommended)
 
 ### Setup
+
+1. Create a virtual environment:
 
 ```bash
 python -m venv venv
 source venv/bin/activate
+
+```
+
+2. Install dependencies:
+
+```bash
 pip install -r requirements.txt
-````
 
----
-
-## Dataset Preparation
-
-```bash
-python create_subset.py
-python create_mini_subset.py
 ```
 
 ---
 
-## Model Training
+## Execution Guide
 
-### Train ResNet
+### Model Training
 
 ```bash
+# Train ResNet
 python train_resnet.py
-```
 
-### Train YOLO
-
-```bash
+# Train YOLO
 python train_yolo.py
-```
 
-### Train LSTM
-
-```bash
+# Train LSTM
 python generate_sensor_data.py
 python train_lstm.py
+
 ```
 
----
+### Running the Application
 
-## Running the Application
-
-### Start Backend
+1. Start the Backend:
 
 ```bash
 python main.py
+
 ```
 
-### Start Frontend
+2. Start the Frontend:
 
 ```bash
 streamlit run streamlit_app.py
-```
-
-Open browser at:
 
 ```
-http://localhost:8501
-```
+
+Open the browser at: `http://localhost:8501`
 
 ---
 
-## Working of the System
+## How it Works
 
-1. User uploads a leaf image
-2. ResNet classifies the disease
-3. YOLO detects infected regions
-4. Sensor data is passed to LSTM
-5. System predicts watering requirement
-6. Results are displayed on the web interface
+1. User uploads a leaf image.
+2. ResNet classifies the specific disease.
+3. YOLO detects and boxes infected regions.
+4. Sensor data is processed by the LSTM model.
+5. System predicts watering requirements and displays all results on the interface.
 
 ---
 
@@ -153,7 +139,7 @@ http://localhost:8501
 
 ---
 
-## Tools & Technologies
+## Tools and Technologies
 
 * Python
 * PyTorch
@@ -167,6 +153,4 @@ http://localhost:8501
 
 ## Conclusion
 
-This project shows how multiple machine learning models can be combined to build an intelligent plant health monitoring system. It helps in early disease detection and efficient watering management.
-
-```
+This project demonstrates the integration of multiple machine learning architectures to build a comprehensive plant health monitoring system. It assists in early disease identification and precision irrigation management.
