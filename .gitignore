@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Dataset files (too large for git)
+dataset/
+dataset_subset/
+dataset_mini/
+dataset_yolo/
+dataset_yolo_mini/
+new-plant-diseases-dataset/
+*.zip
+*.tar.gz
+
+# Model weights (too large for git)
+models/resnet/*.pth
+models/yolo/*.pt
+models/lstm/*.pth
+*.pth
+*.pt
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
+
+# Training outputs
+runs/
+wandb/
+lightning_logs/
+
+# Data files
+data/timeseries/*.csv
+*.csv
+
+# Images and visualizations
+*.jpg
+*.jpeg
+*.png
+*.gif
+sensor_data_visualization.png
+confusion_matrix.png
+training_history.png
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# FastAPI
+.env
+
+# Keep directory structure but ignore contents
+models/resnet/.gitkeep
+models/yolo/.gitkeep
+models/lstm/.gitkeep
+data/timeseries/.gitkeep
+
+# Keep one sample image
+!sample_leaf.jpg
+!results/*.png

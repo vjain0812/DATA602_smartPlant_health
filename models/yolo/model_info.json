@@ -1,0 +1,7 @@
+{
+  "model_size": "n",
+  "epochs": 10,
+  "img_size": 416,
+  "batch_size": 8,
+  "data_yaml": "dataset_yolo_mini\\data.yaml"
+}
